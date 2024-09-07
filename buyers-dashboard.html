@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buyers Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Custom styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .sidebar {
+      background-color: #4CAF50;
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+      border-right: 2px solid #eee;
+    }
+
+    .sidebar h2 {
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+
+    .sidebar a {
+      color: white;
+      padding: 10px 0;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #45a049;
+    }
+
+    .dashboard-card {
+      border-radius: 12px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .dashboard-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .navbar-custom {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .btn-custom {
+      background-color: #FF6347;
+      color: white;
+    }
+
+    .btn-custom:hover {
+      background-color: #FF4500;
+    }
+
+    .stats-card {
+      background-color: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .notification-card {
+      padding: 20px;
+      background-color: #fff8dc;
+      border-left: 5px solid #ffa500;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>SWapna SArthi</h2>
+      <a href="#">Orders</a>
+      <a href="#">Cart</a>
+      <a href="#">Profile</a>
+      <a href="#">Notifications</a>
+      <a href="#">Settings</a>
+      <a href="#">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid py-5 px-5 w-100">
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <h2 class="font-bold text-3xl text-gray-700">Welcome to Your Dashboard</h2>
+          <p class="text-gray-500">Manage your orders, track deliveries, and shop for fresh vegetables and groceries.</p>
+        </div>
+      </div>
+
+      <!-- Stats Overview -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="stats-card">
+            <h5 class="text-xl font-semibold">Orders</h5>
+            <p class="text-gray-600 text-2xl font-bold">24</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stats-card">
+            <h5 class="text-xl font-semibold">Total Spent</h5>
+            <p class="text-gray-600 text-2xl font-bold">₹ 2,000</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stats-card">
+            <h5 class="text-xl font-semibold">Items in Cart</h5>
+            <p class="text-gray-600 text-2xl font-bold">5</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stats-card">
+            <h5 class="text-xl font-semibold">Pending Deliveries</h5>
+            <p class="text-gray-600 text-2xl font-bold">3</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notification Section -->
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="notification-card">
+            <h5 class="font-bold text-lg">New Offer Available!</h5>
+            <p>Get 20% off on all fresh vegetables. Offer valid till the end of the month.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="notification-card">
+            <h5 class="font-bold text-lg">Order Shipped</h5>
+            <p>Your order #345 has been shipped. Expected delivery: 3-5 days.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Products -->
+      <div class="row mt-5">
+        <div class="col-md-12 mb-3">
+          <h3 class="text-xl font-bold text-gray-700">Featured Vegetables and Groceries</h3>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="p-4 bg-white dashboard-card">
+            <img src="tomatoes.webp" alt="Vegetable" class="w-full mb-3">
+            <h5 class="text-lg font-bold">Fresh Tomatoes</h5>
+            <p class="text-gray-600">₹50 per kg</p>
+            <a href="#" class="btn btn-custom mt-3">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="p-4 bg-white dashboard-card">
+            <img src="pexels-polina-tankilevitch-4110251.jpg" alt="Grocery" class="w-full mb-3">
+            <h5 class="text-lg font-bold">Fragrant_rice</h5>
+            <p class="text-gray-600">₹70 per kg</p>
+            <a href="#" class="btn btn-custom mt-3">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="p-4 bg-white dashboard-card">
+            <img src="pile-of-carrots.webp" alt="Vegetable" class="w-full mb-3">
+            <h5 class="text-lg font-bold">Carrots</h5>
+            <p class="text-gray-600">₹30 per kg</p>
+            <a href="#" class="btn btn-custom mt-3">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="p-4 bg-white dashboard-card">
+            <img src="84dfeabc-48e0-4617-84c8-c8f4f1491cf4._CR67,0,1433,750_SX460_QL70_.jpg" alt="Grocery" class="w-full mb-3">
+            <h5 class="text-lg font-bold">Whole Wheat Flour</h5>
+            <p class="text-gray-600">₹80 per kg</p>
+            <a href="#" class="btn btn-custom mt-3">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* styles.css */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    #product-list .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    .btn btn-primary mt-2 {
+        outline-color: transparent;
+        outline-style:solid;
+        box-shadow: 0 0 0 4px #780ad7;
+        transition: 0.7s;
+    }
+    .hero-container{
+        background-image: url(farmer.webp);
+        size: cover;
+        margin: auto;
+    }
+    .bg-success{
+       font-style: normal;
+    }
+    .lead{
+        
+        font-family: Rubik;
+      src: url(/fonts/RubikRegular.woff2) format(woff2);
+      font-weight: 400;
+      font-display: swap;
+     margin-left: 2%;
+    }
+    .logo{
+        width: 450px;
+        height: 50px;
+        margin-left: 2%;
+    }
+   .navbar{
+       display: flex;
+       justify-content: space-between;
+    
+   }
+    .logo{
+        width: 80px;
+        height: 70px;
+        margin-left: 2%;
+        
+    }
+    /* Hero Section */
+.hero {
+    background: url('https://example.com/your-image.jpg') no-repeat center center/cover;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Custom button styles */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-light {
+    background-color: #fff;
+    color: #28a745;
+    border-color: #fff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #709b7a;
+}
+.nav-link {
+    size: 10px;
+}
+.search{
+    width: 10%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+}
+

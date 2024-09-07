@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SWapna SArthi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com">
+        function updateBackgroundPosition() {
+  const wrapper = document.querySelector('.scrollable-wallpaper');
+  const img = wrapper.querySelector('img');
+  const offsetTop = wrapper.scrollTop;
+  img.style.top = `${offsetTop}px`;
+}
+    </script>
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?agriculture,fields') center/cover no-repeat;
+            color: rgb(117, 0, 0);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+        }
+        .btn-custom {
+            background-color: #540101;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #eeeeee;
+        }
+        .icon-box {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .icon-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .footer {
+            background-color: #a26464;
+        }
+        .lead {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-left: auto;
+            font: bolder;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .btn-custom{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: block;
+            width: 200px;
+            text-align: center
+        }
+      
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero-section" style=" background-image: url('pexels-adonyi-foto-1414651.jpg'); background-size: cover;">
+    <div class="container" >
+       
+        <h1 class="lead fw-bolder">About SWapna SArthi</h1>
+        <p class="lead fw-bold " style=" font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight: bolder">Empowering farmers, cutting out the middleman, and uplifting the backbone of our nation.</p>
+        <a href="#about-details" class="btn btn-custom px-4 py-2">Learn More</a>
+    </div>
+</section>
+<div class="content-container">
+    <img src="content-image.jpg" alt="Content image">
+  </div>
+  
+  <style>
+    .content-container {
+      background-image: url("background-image.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .content-container img {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  </style>
+<!-- About Details Section -->
+<section id="about-details" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8 text-center">
+                <h2 class="text-2xl font-bold mb-3">Our Vision & Mission</h2>
+                <p class="text-gray-600">SWapna SArthi is dedicated to transforming the lives of farmers by providing them with the knowledge, tools, and opportunities to sell their products directly to consumers and avoid the middlemen who often take away their hard-earned profits.</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-4 mb-4">
+                <div class="p-4 border rounded-lg shadow-sm icon-box">
+                    <i class="bi bi-lightbulb-fill text-success mb-3" style="font-size: 2rem;"></i>
+                    <h4 class="font-bold text-lg mb-2">Innovative Solutions</h4>
+                    <p class="text-gray-500">We bring innovative solutions to the farming industry, helping farmers embrace technology and improve their yields.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="p-4 border rounded-lg shadow-sm icon-box">
+                    <i class="bi bi-globe2 text-success mb-3" style="font-size: 2rem;"></i>
+                    <h4 class="font-bold text-lg mb-2">Global Outreach</h4>
+                    <p class="text-gray-500">Our platform connects farmers to global markets, ensuring they get the best prices for their products.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="p-4 border rounded-lg shadow-sm icon-box">
+                    <i class="bi bi-people-fill text-success mb-3" style="font-size: 2rem;"></i>
+                    <h4 class="font-bold text-lg mb-2">Community Support</h4>
+                    <p class="text-gray-500">We build a strong community of farmers, consumers, and experts working together to improve the agriculture sector.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Statistics Section -->
+<section class="timeline-item text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 stats-box">
+                <i class="fas fa-users"></i>
+                <h4>10,000+</h4>
+                <p>Farmers Educated</p>
+            </div>
+            <div class="col-md-4 stats-box">
+                <i class="fas fa-seedling"></i>
+                <h4>50,000+</h4>
+                <p>Acreage Improved</p>
+            </div>
+            <div class="col-md-4 stats-box">
+                <i class="fas fa-handshake"></i>
+                <h4>20%</h4>
+                <p>Middleman Elimination</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Testimonials Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-2xl font-bold text-center mb-5">What Farmers Are Saying</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="p-4 border rounded-lg shadow-sm">
+                    <img src="happy-indian-farmer-standing-in-a-field.webp" alt="Farmer 1" class="rounded-circle mb-3">
+                    <h5 class="font-bold">Ramesh Kumar</h5>
+                    <p class="text-gray-600">"SWapna SArthi has transformed the way I sell my produce. I no longer have to deal with middlemen and get a fair price for my crops."</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 border rounded-lg shadow-sm">
+                    <img src="rural-women-cutting-silage-for-domestic-cattle.webp"  class="rounded-circle mb-3">
+                    <h5 class="font-bold">Sita Devi</h5>
+                    <p class="text-gray-600">"The tutorials provided by SWapna SArthi have been invaluable. I've learned so much about modern farming techniques."</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 border rounded-lg shadow-sm">
+                    <img src="360_F_450039240_FBxUhg3pPabC94F6QZz5BgTbTbJO9FyL.webp"  class="rounded-circle mb-3">
+                    <h5 class="font-bold">Amit Singh</h5>
+                    <p class="text-gray-600">"Thanks to SWapna SArthi, I've been able to expand my market reach and increase my profits significantly."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="footer bg-light py-5 text-center">
+    <div class="container">
+        <h2 class="text-3xl" style=" font-family: Arial, Helvetica, sans-serif;">Join the Movement</h2>
+        <p class="lead" style=" font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 15px;">APKA SUPPORT + HUMARA PRAYAS ==SARTHAK "SwAs"</p>
+       
