@@ -10,7 +10,7 @@
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <link rel="stylesheet" href="style.css">
   <style>
     /* Custom styles */
     body {
@@ -90,7 +90,7 @@
   <div class="d-flex">
     <!-- Sidebar -->
     <div class="sidebar">
-      <h2>SWapna SArthi</h2>
+      <h2 class="logopart">SWapna SArthi</h2>
       <a href="#">Orders</a>
       <a href="#">Cart</a>
       <a href="#">Profile</a>
@@ -158,44 +158,61 @@
           <h3 class="text-xl font-bold text-gray-700">Featured Vegetables and Groceries</h3>
         </div>
         <div class="col-md-3 mb-4">
-          <div class="p-4 bg-white dashboard-card">
+          <div class="p-4 bg-white dashboard-card" style="height: 95%;">
             <img src="tomatoes.webp" alt="Vegetable" class="w-full mb-3">
             <h5 class="text-lg font-bold">Fresh Tomatoes</h5>
-            <p class="text-gray-600">₹50 per kg</p>
             <a href="#" class="btn btn-custom mt-3">Add to Cart</a>
+            <p class="text-gray-600">original price:₹50 per kg</p>
+            <p class="text-gray-600">discounted price:₹30 per kg</p>
+           
           </div>
         </div>
 
         <div class="col-md-3 mb-4">
-          <div class="p-4 bg-white dashboard-card">
-            <img src="pexels-polina-tankilevitch-4110251.jpg" alt="Grocery" class="w-full mb-3">
-            <h5 class="text-lg font-bold">Fragrant_rice</h5>
-            <p class="text-gray-600">₹70 per kg</p>
+          <div class="p-4 bg-white dashboard-card" style="height: 95%;">
+            <img src="mushrooms.jpg" alt="Grocery" class="w-full mb-3">
+            <h5 class="text-lg font-bold">mushrooms</h5>
             <a href="#" class="btn btn-custom mt-3">Add to Cart</a>
+            <p class="text-gray-600">original price:₹70 per kg</p>
+            <p class="text-gray-600">discounted price:₹50 per kg</p>
+            
           </div>
         </div>
 
         <div class="col-md-3 mb-4">
-          <div class="p-4 bg-white dashboard-card">
+          <div class="p-4 bg-white dashboard-card" style="height: 95%;">
             <img src="pile-of-carrots.webp" alt="Vegetable" class="w-full mb-3">
             <h5 class="text-lg font-bold">Carrots</h5>
-            <p class="text-gray-600">₹30 per kg</p>
             <a href="#" class="btn btn-custom mt-3">Add to Cart</a>
+            <p class="text-gray-600">original price:₹60 per kg</p><p class="text-gray-600">discounted price:₹30 per kg</p>
+            
           </div>
         </div>
 
         <div class="col-md-3 mb-4">
-          <div class="p-4 bg-white dashboard-card">
-            <img src="84dfeabc-48e0-4617-84c8-c8f4f1491cf4._CR67,0,1433,750_SX460_QL70_.jpg" alt="Grocery" class="w-full mb-3">
+          <div class="p-4 bg-white dashboard-card" style="height: 95%;">
+            <img src="flour.webp" alt="Grocery" class="w-full mb-3">
             <h5 class="text-lg font-bold">Whole Wheat Flour</h5>
-            <p class="text-gray-600">₹80 per kg</p>
             <a href="#" class="btn btn-custom mt-3">Add to Cart</a>
+            <p class="text-gray-600"> original price:₹80 per kg</p>
+            <p class="text-gray-600">discounted price:₹60 per kg</p>
+         
           </div>
         </div>
       </div>
     </div>
   </div>
-
+  <body>
+    <div class="scratch-card-container">
+      <h1>Scratch to Win a Discount!</h1>
+      <div class="scratch-card">
+        <canvas id="scratchCanvas" width="300" height="200"></canvas>
+        <div class="discount-message" id="discountMessage">You got a 20% Discount!</div>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
