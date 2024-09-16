@@ -1,0 +1,191 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #a8e6cf, #dcedc1); /* Refreshing green gradient background */
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Page title styling */
+h1 {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #ff6b6b, #ffdd59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Card container styles */
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+/* Image styling */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid #ff6b6b;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1); /* Zoom-in effect on hover */
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffdd59;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #2c3e50;
+    text-align: justify;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-primary:hover {
+    background-color: #ff4757;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Collapsible section */
+.collapse {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+    transform-origin: top;
+    animation: scaleIn 0.6s ease forwards;
+}
+
+.collapse p {
+    font-size: 1rem;
+    color: #ecf0f1;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.collapse::before {
+    content: '🌿';
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #27ae60;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+/* Parallax background effect */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('pexels-adonyi-foto-1414651.jpg') center/cover no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+    transform: translateZ(-1px) scale(1.5); /* Parallax effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+}
